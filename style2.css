@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "presentation" "news" "footer";
+    grid-template-columns: 100vw;
+    grid-template-rows: 550px auto 50px;
+}
+.presentation{
+    grid-area: presentation;
+    background-color: burlywood;
+    background-image: url(img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.presentation .nav{
+    background-color: #85683C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    opacity: 0.6;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav .nav1{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.logo img{
+    width: 170px;
+    border-radius: 50%;
+}
+.nav1 a{
+    margin: 0 10px;
+}
+.nav .nav2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+    align-items: center;
+    margin-left: 30px;
+}
+.nav2 .contacts{
+    /* background-color: red; */
+}
+.nav select{
+    margin-right: 30px;
+    border:none;
+    padding: 10px;
+    background-color: #603E0B;
+    font-family: 'Open Sans', sans-serif;
+}
+.contacts a{
+    margin: 0 10px;
+}
+.slide{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.slide-container{
+    width: 300px;
+    background-color: #85683C;
+    opacity: 0.5;
+    height: 40px;
+    margin-right: 20px;
+    
+}
+
+.news{
+    grid-area: news;
+    background-color: rgb(29, 32, 44);
+
+}
+
+
+
+
+/* modificado */
+
+.news{
+    /* padding-left: 20%; */
+    /* padding-left: 350px; */
+}
+/* editando la clase creada para contener los news */
+.news-container{
+    width: 90%;
+    margin: 30px auto 0;
+
+    /* estructurando los elementos de cada hijo */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.news ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.news-square-one, .news-square-two, .news-square-three{
+    /* editando el ancho de cada new de medida relativa a absoluta */
+    width: 400px;
+    height: 200px;
+}
+
+.news-square-one, .news-square-three{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.news-square-one-img{
+    background-image: url(img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 150px;
+}
+.news-square-one-text{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    background-color: rgb(37, 41, 59);
+}
+
+.news-square-text-top{
+    align-self: center;
+    color: rgb(245, 240, 240);
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.news-square-text-bottom{
+    align-self: center;
+    color: rgb(245, 240, 240);
+    font-weight: 400;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-square-img{
+    background-color: darkolivegreen;
+}
+
+.news-square-two{
+    background-color: cyan;
+}
+.news-square-three{
+ background-color: darkgrey;
+}
+
+/* end modificado */
+
+
+.footer{
+    grid-area: footer;
+    /* cambio de color */
+    background-color: rgb(29, 32, 44);
+    /* ESTRUCTURANDO EL TEXTO QUE CONTIENE DENTRO */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
